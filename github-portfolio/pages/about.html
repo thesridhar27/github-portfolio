@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Dev User</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="prompt">~/Suhas</span>
+        <span>$</span>
+        <span class="cursor"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="section">
+
+      <!-- Page header -->
+      <div class="page-header animate-up">
+        <div class="section-label">Who I am</div>
+        <h1 class="section-title">About Me</h1>
+        <p class="section-subtitle">// A developer, builder, and occasional over-engineer</p>
+      </div>
+
+      <!-- Main bio grid -->
+      <div class="about-grid">
+        <div class="about-text animate-up delay-1">
+          <h2 class="about-heading">Hey — I'm Dev.</h2>
+          <p>
+            I'm a full-stack software engineer based in <span style="color:var(--cyan)">Bengaluru, India</span> with 5+ years of experience 
+            building products across startups and scale-ups. I care deeply about developer experience, system reliability, 
+            and the craft of writing code that doesn't make your colleagues cry.
+          </p>
+          <p>
+            My work spans backend systems design, React frontends, CLI tooling, and infrastructure automation. 
+            I'm particularly interested in distributed systems, developer productivity, and open-source software.
+          </p>
+          <p>
+            When I'm not coding, I'm probably reading about programming languages, 
+            contributing to OSS, or exploring Bengaluru's excellent coffee scene.
+          </p>
+
+          <div class="about-links">
+            <a href="https://github.com/devuser" target="_blank" class="btn btn-outline">GitHub ↗</a>
+            <a href="contact.html" class="btn btn-ghost">Contact me →</a>
+          </div>
+        </div>
+
+        <div class="about-sidebar animate-up delay-2">
+          <!-- Quick facts -->
+          <div class="card fact-card">
+            <div class="fact-header">
+              <span style="color:var(--green)">●</span> quick_facts.json
+            </div>
+            <div class="facts-list">
+              <div class="fact-row">
+                <span class="fact-key">location</span>
+                <span class="fact-val">Bengaluru, IN 🇮🇳</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-key">role</span>
+                <span class="fact-val">Full-Stack Engineer</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-key">experience</span>
+                <span class="fact-val">5+ years</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-key">education</span>
+                <span class="fact-val">B.Tech CS, IIT Bangalore</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-key">languages</span>
+                <span class="fact-val">English, Kannada, Hindi</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-key">availability</span>
+                <span style="color:var(--green); font-size:12px;">Open ✓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interests -->
+          <div class="card" style="margin-top:16px;">
+            <p style="font-size:11px; color:var(--text-dim); margin-bottom:12px; letter-spacing:0.1em;">INTERESTS</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="badge badge-green">Open Source</span>
+              <span class="badge badge-cyan">Systems Design</span>
+              <span class="badge badge-amber">Compilers</span>
+              <span class="badge badge-cyan">Dev Tooling</span>
+              <span class="badge badge-green">Performance</span>
+              <span class="badge badge-amber">Coffee ☕</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Timeline -->
+      <div class="reveal">
+        <div class="section-label">Journey</div>
+        <h2 class="section-title" style="margin-bottom:40px;">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body card">
+              <div class="tl-header">
+                <div>
+                  <h3>Senior Software Engineer</h3>
+                  <p class="tl-company">Zeta Tech · Bengaluru</p>
+                </div>
+                <span class="badge badge-green">Current</span>
+              </div>
+              <p class="tl-desc">Leading backend platform for fintech APIs serving 2M+ daily active users. Migrated monolith to gRPC microservices, reducing p99 latency by 45%.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
+                <span class="badge badge-cyan">Go</span>
+                <span class="badge badge-cyan">Kubernetes</span>
+                <span class="badge badge-cyan">gRPC</span>
+                <span class="badge badge-amber">Postgres</span>
+              </div>
+            </div>
+            <span class="tl-year">2023 – now</span>
+          </div>
+
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body card">
+              <div class="tl-header">
+                <div>
+                  <h3>Full-Stack Engineer</h3>
+                  <p class="tl-company">Razorpay · Bengaluru</p>
+                </div>
+              </div>
+              <p class="tl-desc">Built merchant dashboard features and internal analytics tooling used by 3,000+ internal users. Owned the design system migration from CSS modules to Tailwind.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
+                <span class="badge badge-cyan">React</span>
+                <span class="badge badge-cyan">Node.js</span>
+                <span class="badge badge-amber">Redis</span>
+              </div>
+            </div>
+            <span class="tl-year">2021 – 2023</span>
+          </div>
+
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body card">
+              <div class="tl-header">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="tl-company">Startup XYZ · Remote</p>
+                </div>
+              </div>
+              <p class="tl-desc">First engineering hire. Built the entire backend from scratch using Node.js + Postgres. Scaled to 10k users in 6 months.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
+                <span class="badge badge-cyan">Node.js</span>
+                <span class="badge badge-cyan">PostgreSQL</span>
+                <span class="badge badge-green">AWS</span>
+              </div>
+            </div>
+            <span class="tl-year">2019 – 2021</span>
+          </div>
+
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-dot tl-edu"></div>
+            <div class="timeline-body card">
+              <div class="tl-header">
+                <div>
+                  <h3>B.Tech — Computer Science</h3>
+                  <p class="tl-company">IIT Bangalore</p>
+                </div>
+                <span class="badge badge-amber">Education</span>
+              </div>
+              <p class="tl-desc">Graduated with honours. Focus on algorithms, distributed systems, and programming language theory. Final project: a toy compiler for a subset of Rust.</p>
+            </div>
+            <span class="tl-year">2015 – 2019</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ♥ by <a href="#">Dev User</a> · <a href="https://github.com/devuser" target="_blank">GitHub</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:8px; font-size:11px;">© 2025 · Bengaluru, India</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

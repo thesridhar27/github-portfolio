@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevUser — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer crafting performant, elegant software. Based in Bengaluru.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body data-github="devuser">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="prompt">~/Suhas</span>
+        <span>$</span>
+        <span class="cursor"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/skills.html">Skills</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content animate-up">
+        <div class="hero-status">
+          <span class="glow-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Dev User</h1>
+
+        <div class="hero-role">
+          &gt; <span data-typewriter="Full-Stack Developer|Open Source Contributor|Systems Architect|Problem Solver"></span><span class="hero-cursor">_</span>
+        </div>
+
+        <p class="hero-bio">
+          I build <span class="highlight">fast, reliable, and beautiful</span> software.<br>
+          From APIs to pixel-perfect UIs — shipping products that matter.
+        </p>
+
+        <div class="hero-actions">
+          <a href="pages/projects.html" class="btn btn-primary">View Projects →</a>
+          <a href="pages/contact.html" class="btn btn-outline">Get in touch</a>
+          <a href="https://github.com/devuser" target="_blank" class="btn btn-ghost">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Terminal card -->
+      <div class="hero-terminal animate-up delay-2">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <span class="terminal-title">whoami.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="t-prompt">❯</span>
+              <span class="t-cmd">cat profile.json</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">{</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "name": <span style="color:var(--green)">"Dev User"</span>,</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "role": <span style="color:var(--green)">"Full-Stack Engineer"</span>,</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "location": <span style="color:var(--cyan)">"Bengaluru, IN"</span>,</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "experience": <span style="color:var(--amber)">"5+ years"</span>,</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "stack": <span style="color:var(--cyan)">["React","Node","Go","Postgres"]</span>,</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">&nbsp; "open_to_work": <span style="color:var(--green)">true</span></span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-output">}</span>
+            </div>
+            <div class="terminal-line" style="margin-top:8px;">
+              <span class="t-prompt">❯</span>
+              <span class="t-cmd">echo $status</span>
+            </div>
+            <div class="terminal-line">
+              <span class="t-success">✓ All systems operational</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="section" style="padding-top:0; padding-bottom:0;">
+      <div class="stats-grid">
+        <div class="stat-item card reveal">
+          <div class="stat-value" data-count="47" data-suffix="+">0+</div>
+          <div class="stat-label">Repositories</div>
+        </div>
+        <div class="stat-item card reveal delay-1">
+          <div class="stat-value" data-count="1200" data-suffix="+">0+</div>
+          <div class="stat-label">Commits this year</div>
+        </div>
+        <div class="stat-item card reveal delay-2">
+          <div class="stat-value" data-count="18" data-suffix="">0</div>
+          <div class="stat-label">Pull requests merged</div>
+        </div>
+        <div class="stat-item card reveal delay-3">
+          <div class="stat-value" data-count="5" data-suffix="yrs">0yrs</div>
+          <div class="stat-label">Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section">
+    <div class="section-label">Featured</div>
+    <h2 class="section-title">Recent Work</h2>
+    <p class="section-subtitle">// A selection of things I've built lately</p>
+
+    <div class="featured-grid">
+      <article class="card featured-card reveal">
+        <div class="card-header">
+          <span class="badge badge-green">Live</span>
+          <span style="font-size:11px; color:var(--text-dim);">2024</span>
+        </div>
+        <h3>CollabBoard</h3>
+        <p>Real-time collaborative whiteboard with WebSocket sync, built with React + Node. Supports 50+ concurrent users with CRDT-based conflict resolution.</p>
+        <div class="card-tags">
+          <span class="badge badge-cyan">React</span>
+          <span class="badge badge-cyan">Node.js</span>
+          <span class="badge badge-amber">WebSockets</span>
+        </div>
+        <div class="card-actions">
+          <a href="pages/projects.html" class="btn btn-outline" style="font-size:11px; padding:7px 14px;">Details →</a>
+          <a href="#" class="btn btn-ghost" style="font-size:11px; padding:7px 14px;">Live ↗</a>
+        </div>
+      </article>
+
+      <article class="card featured-card reveal delay-1">
+        <div class="card-header">
+          <span class="badge badge-amber">WIP</span>
+          <span style="font-size:11px; color:var(--text-dim);">2025</span>
+        </div>
+        <h3>Axon CLI</h3>
+        <p>A developer productivity CLI written in Go. Manages project scaffolding, env configs, and GitHub workflow templates with a single command.</p>
+        <div class="card-tags">
+          <span class="badge badge-cyan">Go</span>
+          <span class="badge badge-cyan">CLI</span>
+          <span class="badge badge-green">OSS</span>
+        </div>
+        <div class="card-actions">
+          <a href="pages/projects.html" class="btn btn-outline" style="font-size:11px; padding:7px 14px;">Details →</a>
+          <a href="#" class="btn btn-ghost" style="font-size:11px; padding:7px 14px;">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="card featured-card reveal delay-2">
+        <div class="card-header">
+          <span class="badge badge-green">Live</span>
+          <span style="font-size:11px; color:var(--text-dim);">2024</span>
+        </div>
+        <h3>QueryLens</h3>
+        <p>PostgreSQL query analyzer and slow-query visualizer. Auto-suggests indexes and shows execution plan diffs before/after optimization.</p>
+        <div class="card-tags">
+          <span class="badge badge-cyan">Python</span>
+          <span class="badge badge-cyan">PostgreSQL</span>
+          <span class="badge badge-amber">DevTools</span>
+        </div>
+        <div class="card-actions">
+          <a href="pages/projects.html" class="btn btn-outline" style="font-size:11px; padding:7px 14px;">Details →</a>
+          <a href="#" class="btn btn-ghost" style="font-size:11px; padding:7px 14px;">Live ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="pages/projects.html" class="btn btn-outline">View all projects →</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="section">
+      <div class="cta-card card reveal">
+        <div class="cta-inner">
+          <div>
+            <div class="section-label">Let's work together</div>
+            <h2 style="font-size:clamp(22px,4vw,36px); color:#fff; margin-bottom:8px;">Got an idea? Let's build it.</h2>
+            <p style="color:var(--text-muted); font-size:13px;">I'm available for freelance, contract, and full-time roles.</p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="pages/contact.html" class="btn btn-primary">Start a conversation →</a>
+            <a href="pages/about.html" class="btn btn-ghost">Learn more about me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      Built with ♥ by <a href="#">Dev User</a> · 
+      <a href="https://github.com/devuser" target="_blank">GitHub</a> · 
+      <a href="pages/contact.html">Contact</a>
+    </p>
+    <p style="margin-top:8px; font-size:11px;">© 2025 · Bengaluru, India</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Dev User</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body data-github="devuser">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="prompt">~/Suhas</span><span>$</span><span class="cursor"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="section">
+      <div class="page-header animate-up">
+        <div class="section-label">My work</div>
+        <h1 class="section-title">Projects</h1>
+        <p class="section-subtitle">// Things I've built, shipped, and learned from</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-bar animate-up delay-1">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="cli">CLI / Tools</button>
+        <button class="filter-btn" data-filter="oss">Open Source</button>
+      </div>
+
+      <!-- Featured project -->
+      <div class="project-featured card reveal animate-up delay-2" data-tags="fullstack">
+        <div class="featured-badge">★ Featured</div>
+        <div class="featured-layout">
+          <div>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+              <h2 style="font-size:24px; color:#fff;">CollabBoard</h2>
+              <span class="badge badge-green">Live</span>
+            </div>
+            <p style="color:var(--text-muted); font-size:13px; line-height:1.8; margin-bottom:20px;">
+              Real-time collaborative whiteboard application supporting up to 50 concurrent users. Built with React, Node.js, and WebSockets using CRDT (Conflict-free Replicated Data Types) for conflict resolution. Users can draw, add sticky notes, and see live cursor positions.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+              <span class="badge badge-cyan">React</span>
+              <span class="badge badge-cyan">Node.js</span>
+              <span class="badge badge-cyan">WebSockets</span>
+              <span class="badge badge-amber">Redis</span>
+              <span class="badge badge-green">CRDT</span>
+            </div>
+            <div style="display:flex; gap:12px;">
+              <a href="#" class="btn btn-primary" style="font-size:12px; padding:8px 16px;">Live Demo ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:12px; padding:8px 16px;">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="featured-meta">
+            <div class="meta-item"><span>Type</span><span>Full-Stack</span></div>
+            <div class="meta-item"><span>Year</span><span>2024</span></div>
+            <div class="meta-item"><span>Stars</span><span>★ 142</span></div>
+            <div class="meta-item"><span>Status</span><span style="color:var(--green)">Live ✓</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="card project-card reveal delay-1" data-tags="cli oss">
+          <div class="project-icon">⌨</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>Axon CLI</h3>
+            <span class="badge badge-amber">WIP</span>
+          </div>
+          <p>Developer productivity CLI written in Go. Manages project scaffolding, env configs, GitHub templates, and more with a single command.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">Go</span>
+            <span class="badge badge-green">OSS</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 88</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal delay-2" data-tags="backend">
+          <div class="project-icon">🔍</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>QueryLens</h3>
+            <span class="badge badge-green">Live</span>
+          </div>
+          <p>PostgreSQL query analyzer and slow-query visualizer. Auto-suggests indexes and shows execution plan diffs before/after optimization.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">Python</span>
+            <span class="badge badge-amber">PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 234</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal delay-3" data-tags="fullstack">
+          <div class="project-icon">📊</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>MetricFlow</h3>
+            <span class="badge badge-green">Live</span>
+          </div>
+          <p>Self-hosted analytics dashboard for small SaaS products. Custom charting, funnel analysis, and cohort retention built without GA.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">React</span>
+            <span class="badge badge-cyan">Node.js</span>
+            <span class="badge badge-amber">ClickHouse</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 67</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-tags="backend oss">
+          <div class="project-icon">⚡</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>fastq</h3>
+            <span class="badge badge-green">Stable</span>
+          </div>
+          <p>High-throughput job queue for Node.js backed by Redis. Supports priority queues, retries, dead-letter queues, and concurrency limits.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">Node.js</span>
+            <span class="badge badge-amber">Redis</span>
+            <span class="badge badge-green">OSS</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 391</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal delay-1" data-tags="cli">
+          <div class="project-icon">🛡</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>envguard</h3>
+            <span class="badge badge-green">Stable</span>
+          </div>
+          <p>CLI tool to detect leaked secrets and misconfigured env variables before committing. Integrates with git hooks and CI pipelines.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">Go</span>
+            <span class="badge badge-green">Security</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 156</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal delay-2" data-tags="fullstack">
+          <div class="project-icon">🗂</div>
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <h3>Docktree</h3>
+            <span class="badge badge-amber">Beta</span>
+          </div>
+          <p>Document hierarchy manager for teams. Stores notes in git, supports Markdown + MDX, versioning, and real-time co-editing.</p>
+          <div class="project-tags">
+            <span class="badge badge-cyan">React</span>
+            <span class="badge badge-cyan">Go</span>
+            <span class="badge badge-amber">MDX</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:11px; color:var(--text-dim);">★ 43</span>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; padding:5px 10px;">View →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- GitHub repos section -->
+      <div class="divider"></div>
+      <div class="reveal">
+        <div class="section-label">Live from GitHub</div>
+        <h2 class="section-title" style="margin-bottom:8px;">Public Repositories</h2>
+        <p class="section-subtitle">// Fetched directly from the GitHub API</p>
+        <div id="github-repos" class="projects-grid">
+          <div class="loading-repos">
+            <span class="glow-dot"></span> Loading repositories...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ♥ by <a href="#">Dev User</a> · <a href="https://github.com/devuser" target="_blank">GitHub</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:8px; font-size:11px;">© 2025 · Bengaluru, India</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>

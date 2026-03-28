@@ -1,0 +1,131 @@
+/* ============================================
+   ABOUT PAGE STYLES
+   ============================================ */
+
+.page-header { margin-bottom: 56px; }
+
+/* ── About grid ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+.about-heading {
+  font-size: clamp(24px, 4vw, 36px);
+  color: #fff;
+  margin-bottom: 20px;
+}
+.about-text p {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+.about-text p span { color: var(--cyan); }
+.about-links { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+
+/* ── Fact card ── */
+.fact-card { padding: 20px; }
+.fact-header {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.facts-list { display: flex; flex-direction: column; gap: 12px; }
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.fact-row:last-child { border-bottom: none; padding-bottom: 0; }
+.fact-key { color: var(--text-dim); }
+.fact-val { color: var(--text); }
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, var(--green), var(--border) 80%, transparent);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: start;
+}
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--green);
+  box-shadow: 0 0 8px var(--green-dim);
+}
+.timeline-dot.tl-edu { border-color: var(--amber); box-shadow: 0 0 8px var(--amber); }
+.tl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+.tl-header h3 {
+  font-size: 16px;
+  color: #fff;
+  font-family: var(--font-display);
+}
+.tl-company {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  font-family: var(--font-mono);
+}
+.tl-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  line-height: 1.7;
+}
+.tl-year {
+  font-size: 11px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  padding-top: 20px;
+  font-family: var(--font-mono);
+}
+
+/* ── Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .timeline-item { grid-template-columns: 1fr; }
+  .tl-year { padding-top: 0; }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Dev User</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/blog.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="prompt">~/Suhas</span><span>$</span><span class="cursor"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="section">
+
+      <div class="page-header animate-up">
+        <div class="section-label">Writing</div>
+        <h1 class="section-title">Blog</h1>
+        <p class="section-subtitle">// Thoughts on engineering, systems, and software craftsmanship</p>
+      </div>
+
+      <!-- Featured post -->
+      <article class="card post-featured reveal animate-up delay-1">
+        <div class="post-featured-inner">
+          <div>
+            <div style="display:flex; gap:10px; align-items:center; margin-bottom:16px;">
+              <span class="badge badge-green">Featured</span>
+              <span class="badge badge-cyan">Systems</span>
+            </div>
+            <h2 class="post-title-large">
+              <a href="#">Why I Rewrote Our API Gateway in Go (and What I Learned)</a>
+            </h2>
+            <p class="post-excerpt">
+              After hitting a wall with our Node.js API gateway at 50k RPS, we made the decision to rewrite it in Go. This is the story of that migration — the wins, the surprises, and the parts that went sideways.
+            </p>
+            <div class="post-meta">
+              <span>March 12, 2025</span>
+              <span>·</span>
+              <span>8 min read</span>
+              <span>·</span>
+              <span>1.2k views</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" style="white-space:nowrap; align-self:center;">Read article →</a>
+        </div>
+      </article>
+
+      <!-- Post list -->
+      <div class="posts-list">
+
+        <article class="post-item card reveal">
+          <div class="post-item-inner">
+            <div class="post-item-content">
+              <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="badge badge-amber">Performance</span>
+                <span class="badge badge-cyan">PostgreSQL</span>
+              </div>
+              <h3 class="post-title"><a href="#">The Hidden Cost of SELECT *: A Postgres Deep Dive</a></h3>
+              <p class="post-excerpt-sm">Most developers know you should avoid SELECT * in production. Few know exactly why — here's what actually happens under the hood in Postgres.</p>
+              <div class="post-meta">
+                <span>Feb 24, 2025</span>
+                <span>·</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; white-space:nowrap; padding:7px 14px;">Read →</a>
+          </div>
+        </article>
+
+        <article class="post-item card reveal delay-1">
+          <div class="post-item-inner">
+            <div class="post-item-content">
+              <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="badge badge-green">Go</span>
+                <span class="badge badge-cyan">CLI</span>
+              </div>
+              <h3 class="post-title"><a href="#">Building Beautiful CLI Tools in Go with Charm</a></h3>
+              <p class="post-excerpt-sm">The Charm ecosystem (Bubble Tea, Lip Gloss, Glamour) makes building polished terminal UIs in Go surprisingly fun. Here's a practical walkthrough.</p>
+              <div class="post-meta">
+                <span>Jan 15, 2025</span>
+                <span>·</span>
+                <span>11 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; white-space:nowrap; padding:7px 14px;">Read →</a>
+          </div>
+        </article>
+
+        <article class="post-item card reveal delay-2">
+          <div class="post-item-inner">
+            <div class="post-item-content">
+              <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="badge badge-amber">Architecture</span>
+              </div>
+              <h3 class="post-title"><a href="#">Monolith to Microservices: The Migration Nobody Tells You About</a></h3>
+              <p class="post-excerpt-sm">Everyone talks about the architecture wins. Nobody talks about the 6 months of production incidents, broken team ownership, and tooling chaos. Here's the real story.</p>
+              <div class="post-meta">
+                <span>Dec 3, 2024</span>
+                <span>·</span>
+                <span>14 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; white-space:nowrap; padding:7px 14px;">Read →</a>
+          </div>
+        </article>
+
+        <article class="post-item card reveal delay-3">
+          <div class="post-item-inner">
+            <div class="post-item-content">
+              <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="badge badge-cyan">React</span>
+                <span class="badge badge-green">DX</span>
+              </div>
+              <h3 class="post-title"><a href="#">10 Patterns I Use in Every React Codebase</a></h3>
+              <p class="post-excerpt-sm">After working across several React codebases, these are the patterns that consistently make code easier to understand, test, and change.</p>
+              <div class="post-meta">
+                <span>Oct 18, 2024</span>
+                <span>·</span>
+                <span>9 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; white-space:nowrap; padding:7px 14px;">Read →</a>
+          </div>
+        </article>
+
+        <article class="post-item card reveal">
+          <div class="post-item-inner">
+            <div class="post-item-content">
+              <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+                <span class="badge badge-amber">Career</span>
+              </div>
+              <h3 class="post-title"><a href="#">What I Wish I Knew as a Junior Developer in Bengaluru</a></h3>
+              <p class="post-excerpt-sm">Honest advice on navigating the Indian tech ecosystem, choosing companies, negotiating offers, and growing fast in your first 2 years.</p>
+              <div class="post-meta">
+                <span>Sep 5, 2024</span>
+                <span>·</span>
+                <span>7 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:11px; white-space:nowrap; padding:7px 14px;">Read →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter CTA -->
+      <div class="divider"></div>
+      <div class="card newsletter-card reveal">
+        <div class="section-label">Stay updated</div>
+        <h2 style="font-size:22px; color:#fff; margin-bottom:8px;">Get new posts in your inbox</h2>
+        <p style="color:var(--text-muted); font-size:13px; margin-bottom:20px;">No spam. Just occasional posts about Go, systems design, and engineering.</p>
+        <div class="newsletter-form">
+          <input type="email" class="form-input" placeholder="your@email.com" style="max-width:320px;" />
+          <button class="btn btn-primary">Subscribe →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ♥ by <a href="#">Dev User</a> · <a href="https://github.com/devuser" target="_blank">GitHub</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:8px; font-size:11px;">© 2025 · Bengaluru, India</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
